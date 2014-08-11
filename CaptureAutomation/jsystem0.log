@@ -1,0 +1,907 @@
+May 14, 2014 6:16:42 PM jsystem.framework.JSystemProperties restoreFromBackup
+SEVERE: JSystem properties file was empty, restoring from backup.
+May 14, 2014 6:16:42 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+May 14, 2014 6:16:43 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests\main\tests\SampleTest.java
+May 14, 2014 6:16:43 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+May 14, 2014 6:16:43 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+May 14, 2014 6:16:43 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+May 14, 2014 6:16:43 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+May 14, 2014 6:16:44 PM jsystem.framework.report.RunnerListenersManager fireEndTest
+SEVERE: Fail to add endTest
+java.lang.NoClassDefFoundError: javax/mail/MethodNotSupportedException
+	at jsystem.framework.scenario.ScenariosManager.getScenario(ScenariosManager.java:116)
+	at jsystem.framework.scenario.ScenariosManager.getCurrentScenario(ScenariosManager.java:174)
+	at jsystem.extensions.report.xml.Reader.endTest(Reader.java:135)
+	at jsystem.extensions.report.xml.XmlReporter.endTest(XmlReporter.java:112)
+	at jsystem.framework.report.RunnerListenersManager.fireEndTest(RunnerListenersManager.java:637)
+	at jsystem.framework.report.RunnerListenersManager.endTest(RunnerListenersManager.java:540)
+	at junit.framework.JSystemJUnit4ClassRunner$TestListenerAdapter.testFinished(JSystemJUnit4ClassRunner.java:163)
+	at org.junit.runner.notification.RunNotifier$7.notifyListener(RunNotifier.java:145)
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:41)
+	at org.junit.runner.notification.RunNotifier.fireTestFinished(RunNotifier.java:142)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:51)
+	at org.junit.internal.runners.JUnit4ClassRunner.invokeTestMethod(JUnit4ClassRunner.java:98)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:61)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:54)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:52)
+	at junit.framework.JSystemJUnit4ClassRunner.run(JSystemJUnit4ClassRunner.java:216)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.lang.ClassNotFoundException: javax.mail.MethodNotSupportedException
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+
+May 14, 2014 6:16:44 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+May 14, 2014 6:17:15 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+May 14, 2014 6:17:15 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests\main\tests\SampleTest.java
+May 14, 2014 6:17:15 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+May 14, 2014 6:17:15 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+May 14, 2014 6:17:15 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+May 14, 2014 6:17:15 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+May 14, 2014 6:17:16 PM jsystem.framework.report.RunnerListenersManager fireEndTest
+SEVERE: Fail to add endTest
+java.lang.NoClassDefFoundError: javax/mail/MethodNotSupportedException
+	at jsystem.framework.scenario.ScenariosManager.getScenario(ScenariosManager.java:116)
+	at jsystem.framework.scenario.ScenariosManager.getCurrentScenario(ScenariosManager.java:174)
+	at jsystem.extensions.report.xml.Reader.endTest(Reader.java:135)
+	at jsystem.extensions.report.xml.XmlReporter.endTest(XmlReporter.java:112)
+	at jsystem.framework.report.RunnerListenersManager.fireEndTest(RunnerListenersManager.java:637)
+	at jsystem.framework.report.RunnerListenersManager.endTest(RunnerListenersManager.java:540)
+	at junit.framework.JSystemJUnit4ClassRunner$TestListenerAdapter.testFinished(JSystemJUnit4ClassRunner.java:163)
+	at org.junit.runner.notification.RunNotifier$7.notifyListener(RunNotifier.java:145)
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:41)
+	at org.junit.runner.notification.RunNotifier.fireTestFinished(RunNotifier.java:142)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:51)
+	at org.junit.internal.runners.JUnit4ClassRunner.invokeTestMethod(JUnit4ClassRunner.java:98)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:61)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:54)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:52)
+	at junit.framework.JSystemJUnit4ClassRunner.run(JSystemJUnit4ClassRunner.java:216)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.lang.ClassNotFoundException: javax.mail.MethodNotSupportedException
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+
+May 14, 2014 6:17:16 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+May 14, 2014 6:17:37 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+May 14, 2014 6:17:37 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests\main\tests\SampleTest.java
+May 14, 2014 6:17:37 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+May 14, 2014 6:17:37 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+May 14, 2014 6:17:37 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+May 14, 2014 6:17:37 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+May 14, 2014 6:17:38 PM jsystem.framework.report.RunnerListenersManager fireEndTest
+SEVERE: Fail to add endTest
+java.lang.NoClassDefFoundError: javax/mail/MethodNotSupportedException
+	at jsystem.framework.scenario.ScenariosManager.getScenario(ScenariosManager.java:116)
+	at jsystem.framework.scenario.ScenariosManager.getCurrentScenario(ScenariosManager.java:174)
+	at jsystem.extensions.report.xml.Reader.endTest(Reader.java:135)
+	at jsystem.extensions.report.xml.XmlReporter.endTest(XmlReporter.java:112)
+	at jsystem.framework.report.RunnerListenersManager.fireEndTest(RunnerListenersManager.java:637)
+	at jsystem.framework.report.RunnerListenersManager.endTest(RunnerListenersManager.java:540)
+	at junit.framework.JSystemJUnit4ClassRunner$TestListenerAdapter.testFinished(JSystemJUnit4ClassRunner.java:163)
+	at org.junit.runner.notification.RunNotifier$7.notifyListener(RunNotifier.java:145)
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:41)
+	at org.junit.runner.notification.RunNotifier.fireTestFinished(RunNotifier.java:142)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:51)
+	at org.junit.internal.runners.JUnit4ClassRunner.invokeTestMethod(JUnit4ClassRunner.java:98)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:61)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:54)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:52)
+	at junit.framework.JSystemJUnit4ClassRunner.run(JSystemJUnit4ClassRunner.java:216)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.lang.ClassNotFoundException: javax.mail.MethodNotSupportedException
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+
+May 14, 2014 6:17:38 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+May 14, 2014 6:18:01 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+May 14, 2014 6:18:01 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests\main\tests\SampleTest.java
+May 14, 2014 6:18:01 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+May 14, 2014 6:18:01 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+May 14, 2014 6:18:01 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+May 14, 2014 6:18:01 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+May 14, 2014 6:18:02 PM jsystem.framework.report.RunnerListenersManager fireEndTest
+SEVERE: Fail to add endTest
+java.lang.NoClassDefFoundError: javax/mail/MethodNotSupportedException
+	at jsystem.framework.scenario.ScenariosManager.getScenario(ScenariosManager.java:116)
+	at jsystem.framework.scenario.ScenariosManager.getCurrentScenario(ScenariosManager.java:174)
+	at jsystem.extensions.report.xml.Reader.endTest(Reader.java:135)
+	at jsystem.extensions.report.xml.XmlReporter.endTest(XmlReporter.java:112)
+	at jsystem.framework.report.RunnerListenersManager.fireEndTest(RunnerListenersManager.java:637)
+	at jsystem.framework.report.RunnerListenersManager.endTest(RunnerListenersManager.java:540)
+	at junit.framework.JSystemJUnit4ClassRunner$TestListenerAdapter.testFinished(JSystemJUnit4ClassRunner.java:163)
+	at org.junit.runner.notification.RunNotifier$7.notifyListener(RunNotifier.java:145)
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:41)
+	at org.junit.runner.notification.RunNotifier.fireTestFinished(RunNotifier.java:142)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:51)
+	at org.junit.internal.runners.JUnit4ClassRunner.invokeTestMethod(JUnit4ClassRunner.java:98)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:61)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:54)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:52)
+	at junit.framework.JSystemJUnit4ClassRunner.run(JSystemJUnit4ClassRunner.java:216)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.lang.ClassNotFoundException: javax.mail.MethodNotSupportedException
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+
+May 14, 2014 6:18:02 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+May 14, 2014 6:18:58 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+May 14, 2014 6:18:58 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests\main\tests\SampleTest.java
+May 14, 2014 6:18:58 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+May 14, 2014 6:18:58 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+May 14, 2014 6:18:58 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+May 14, 2014 6:18:58 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+May 14, 2014 6:18:59 PM jsystem.framework.report.RunnerListenersManager fireEndTest
+SEVERE: Fail to add endTest
+java.lang.NoClassDefFoundError: javax/mail/MethodNotSupportedException
+	at jsystem.framework.scenario.ScenariosManager.getScenario(ScenariosManager.java:116)
+	at jsystem.framework.scenario.ScenariosManager.getCurrentScenario(ScenariosManager.java:174)
+	at jsystem.extensions.report.xml.Reader.endTest(Reader.java:135)
+	at jsystem.extensions.report.xml.XmlReporter.endTest(XmlReporter.java:112)
+	at jsystem.framework.report.RunnerListenersManager.fireEndTest(RunnerListenersManager.java:637)
+	at jsystem.framework.report.RunnerListenersManager.endTest(RunnerListenersManager.java:540)
+	at junit.framework.JSystemJUnit4ClassRunner$TestListenerAdapter.testFinished(JSystemJUnit4ClassRunner.java:163)
+	at org.junit.runner.notification.RunNotifier$7.notifyListener(RunNotifier.java:145)
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:41)
+	at org.junit.runner.notification.RunNotifier.fireTestFinished(RunNotifier.java:142)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:51)
+	at org.junit.internal.runners.JUnit4ClassRunner.invokeTestMethod(JUnit4ClassRunner.java:98)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:61)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:54)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:52)
+	at junit.framework.JSystemJUnit4ClassRunner.run(JSystemJUnit4ClassRunner.java:216)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.lang.ClassNotFoundException: javax.mail.MethodNotSupportedException
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+
+May 14, 2014 6:18:59 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+May 14, 2014 6:19:29 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+May 14, 2014 6:19:29 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests\main\tests\SampleTest.java
+May 14, 2014 6:19:29 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+May 14, 2014 6:19:29 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+May 14, 2014 6:19:29 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+May 14, 2014 6:19:29 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+May 14, 2014 6:19:30 PM jsystem.framework.report.RunnerListenersManager fireEndTest
+SEVERE: Fail to add endTest
+java.lang.NoClassDefFoundError: javax/mail/MethodNotSupportedException
+	at jsystem.framework.scenario.ScenariosManager.getScenario(ScenariosManager.java:116)
+	at jsystem.framework.scenario.ScenariosManager.getCurrentScenario(ScenariosManager.java:174)
+	at jsystem.extensions.report.xml.Reader.endTest(Reader.java:135)
+	at jsystem.extensions.report.xml.XmlReporter.endTest(XmlReporter.java:112)
+	at jsystem.framework.report.RunnerListenersManager.fireEndTest(RunnerListenersManager.java:637)
+	at jsystem.framework.report.RunnerListenersManager.endTest(RunnerListenersManager.java:540)
+	at junit.framework.JSystemJUnit4ClassRunner$TestListenerAdapter.testFinished(JSystemJUnit4ClassRunner.java:163)
+	at org.junit.runner.notification.RunNotifier$7.notifyListener(RunNotifier.java:145)
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:41)
+	at org.junit.runner.notification.RunNotifier.fireTestFinished(RunNotifier.java:142)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:51)
+	at org.junit.internal.runners.JUnit4ClassRunner.invokeTestMethod(JUnit4ClassRunner.java:98)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:61)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:54)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:52)
+	at junit.framework.JSystemJUnit4ClassRunner.run(JSystemJUnit4ClassRunner.java:216)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.lang.ClassNotFoundException: javax.mail.MethodNotSupportedException
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+
+May 14, 2014 6:19:30 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+May 14, 2014 6:20:25 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+May 14, 2014 6:20:25 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests\main\tests\SampleTest.java
+May 14, 2014 6:20:25 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+May 14, 2014 6:20:25 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+May 14, 2014 6:20:25 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+May 14, 2014 6:20:25 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+May 14, 2014 6:20:26 PM jsystem.framework.report.RunnerListenersManager fireEndTest
+SEVERE: Fail to add endTest
+java.lang.NoClassDefFoundError: javax/mail/MethodNotSupportedException
+	at jsystem.framework.scenario.ScenariosManager.getScenario(ScenariosManager.java:116)
+	at jsystem.framework.scenario.ScenariosManager.getCurrentScenario(ScenariosManager.java:174)
+	at jsystem.extensions.report.xml.Reader.endTest(Reader.java:135)
+	at jsystem.extensions.report.xml.XmlReporter.endTest(XmlReporter.java:112)
+	at jsystem.framework.report.RunnerListenersManager.fireEndTest(RunnerListenersManager.java:637)
+	at jsystem.framework.report.RunnerListenersManager.endTest(RunnerListenersManager.java:540)
+	at junit.framework.JSystemJUnit4ClassRunner$TestListenerAdapter.testFinished(JSystemJUnit4ClassRunner.java:163)
+	at org.junit.runner.notification.RunNotifier$7.notifyListener(RunNotifier.java:145)
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:41)
+	at org.junit.runner.notification.RunNotifier.fireTestFinished(RunNotifier.java:142)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:51)
+	at org.junit.internal.runners.JUnit4ClassRunner.invokeTestMethod(JUnit4ClassRunner.java:98)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:61)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:54)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:52)
+	at junit.framework.JSystemJUnit4ClassRunner.run(JSystemJUnit4ClassRunner.java:216)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.lang.ClassNotFoundException: javax.mail.MethodNotSupportedException
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+
+May 14, 2014 6:20:26 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+May 14, 2014 6:20:51 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+May 14, 2014 6:20:51 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests\main\tests\SampleTest.java
+May 14, 2014 6:20:51 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+May 14, 2014 6:20:51 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+May 14, 2014 6:20:51 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+May 14, 2014 6:20:51 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+May 14, 2014 6:20:52 PM jsystem.framework.report.RunnerListenersManager fireEndTest
+SEVERE: Fail to add endTest
+java.lang.NoClassDefFoundError: javax/mail/MethodNotSupportedException
+	at jsystem.framework.scenario.ScenariosManager.getScenario(ScenariosManager.java:116)
+	at jsystem.framework.scenario.ScenariosManager.getCurrentScenario(ScenariosManager.java:174)
+	at jsystem.extensions.report.xml.Reader.endTest(Reader.java:135)
+	at jsystem.extensions.report.xml.XmlReporter.endTest(XmlReporter.java:112)
+	at jsystem.framework.report.RunnerListenersManager.fireEndTest(RunnerListenersManager.java:637)
+	at jsystem.framework.report.RunnerListenersManager.endTest(RunnerListenersManager.java:540)
+	at junit.framework.JSystemJUnit4ClassRunner$TestListenerAdapter.testFinished(JSystemJUnit4ClassRunner.java:163)
+	at org.junit.runner.notification.RunNotifier$7.notifyListener(RunNotifier.java:145)
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:41)
+	at org.junit.runner.notification.RunNotifier.fireTestFinished(RunNotifier.java:142)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:51)
+	at org.junit.internal.runners.JUnit4ClassRunner.invokeTestMethod(JUnit4ClassRunner.java:98)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:61)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:54)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:52)
+	at junit.framework.JSystemJUnit4ClassRunner.run(JSystemJUnit4ClassRunner.java:216)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.lang.ClassNotFoundException: javax.mail.MethodNotSupportedException
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+
+May 14, 2014 6:20:52 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+May 14, 2014 6:22:01 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+May 14, 2014 6:22:01 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests\main\tests\SampleTest.java
+May 14, 2014 6:22:01 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+May 14, 2014 6:22:01 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+May 14, 2014 6:22:01 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+May 14, 2014 6:22:01 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+May 14, 2014 6:22:02 PM jsystem.framework.report.RunnerListenersManager fireEndTest
+SEVERE: Fail to add endTest
+java.lang.NoClassDefFoundError: javax/mail/MethodNotSupportedException
+	at jsystem.framework.scenario.ScenariosManager.getScenario(ScenariosManager.java:116)
+	at jsystem.framework.scenario.ScenariosManager.getCurrentScenario(ScenariosManager.java:174)
+	at jsystem.extensions.report.xml.Reader.endTest(Reader.java:135)
+	at jsystem.extensions.report.xml.XmlReporter.endTest(XmlReporter.java:112)
+	at jsystem.framework.report.RunnerListenersManager.fireEndTest(RunnerListenersManager.java:637)
+	at jsystem.framework.report.RunnerListenersManager.endTest(RunnerListenersManager.java:540)
+	at junit.framework.JSystemJUnit4ClassRunner$TestListenerAdapter.testFinished(JSystemJUnit4ClassRunner.java:163)
+	at org.junit.runner.notification.RunNotifier$7.notifyListener(RunNotifier.java:145)
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:41)
+	at org.junit.runner.notification.RunNotifier.fireTestFinished(RunNotifier.java:142)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:51)
+	at org.junit.internal.runners.JUnit4ClassRunner.invokeTestMethod(JUnit4ClassRunner.java:98)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:61)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:54)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:52)
+	at junit.framework.JSystemJUnit4ClassRunner.run(JSystemJUnit4ClassRunner.java:216)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.lang.ClassNotFoundException: javax.mail.MethodNotSupportedException
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+
+May 14, 2014 6:22:02 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 12:27:59 PM jsystem.framework.sut.SutFactory getSutFile
+WARNING: Can't find sut file: /Users/chiranjit/Desktop/Work/CaptureAutomation/bin/sut/default.xml
+Jun 09, 2014 12:27:59 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 12:27:59 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 12:27:59 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 12:27:59 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 12:27:59 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 12:27:59 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 12:28:00 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 12:28:00 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 12:28:59 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 12:28:59 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 12:28:59 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 12:28:59 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 12:28:59 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 12:28:59 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 12:29:00 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 12:29:00 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 12:29:28 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 12:29:28 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 12:29:28 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 12:29:28 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 12:29:28 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 12:29:28 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 12:29:29 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 12:29:29 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 12:30:45 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 12:30:45 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 12:30:45 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 12:30:45 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 12:30:45 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 12:30:45 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 12:30:46 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 12:30:46 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 12:31:23 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 12:31:23 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 12:31:23 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 12:31:23 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 12:31:23 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 12:31:23 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 12:31:25 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 12:31:25 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 12:32:09 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 12:32:10 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 12:32:10 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 12:32:10 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 12:32:10 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 12:32:10 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 12:32:11 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 12:32:11 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 12:32:32 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 12:32:32 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 12:32:32 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 12:32:32 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 12:32:32 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 12:32:32 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 12:33:58 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 12:33:58 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 12:33:58 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 12:33:58 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 12:33:58 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 12:33:58 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 12:36:55 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 12:36:55 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 12:36:55 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 12:36:55 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 12:36:55 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 12:36:55 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 12:36:56 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 12:36:56 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 12:37:12 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 12:37:12 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 12:37:12 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 12:37:12 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 12:37:12 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 12:37:12 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 12:39:36 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 12:39:36 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 12:39:36 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 12:39:36 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 12:39:36 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 12:39:36 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 12:39:37 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 12:39:37 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 12:40:00 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 12:40:00 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 12:40:00 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 12:40:00 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 12:40:00 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 12:40:00 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 2:21:50 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 2:21:50 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 2:21:50 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 2:21:50 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 2:21:50 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 2:21:50 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 2:21:51 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 2:21:51 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 2:25:07 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 2:25:07 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 2:25:07 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 2:25:07 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 2:25:07 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 2:25:07 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 2:25:08 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 2:25:08 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 2:25:46 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 2:25:46 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 2:25:47 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 2:25:47 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 2:25:47 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 2:25:47 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 2:34:01 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 2:34:01 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 2:34:44 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 2:34:44 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 2:34:44 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 2:34:44 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 2:34:44 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 2:34:44 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 2:35:09 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 2:35:09 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 2:37:18 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 2:37:18 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 2:37:18 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 2:37:18 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 2:37:18 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 2:37:18 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 2:37:32 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 2:37:32 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 2:39:15 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 2:39:15 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 2:39:15 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 2:39:15 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 2:39:15 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 2:39:15 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 2:40:22 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 2:40:22 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 2:42:34 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 2:42:34 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 2:42:34 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 2:42:34 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 2:42:34 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 2:42:34 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 2:42:48 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 2:42:48 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 2:45:46 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 2:45:46 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 2:45:46 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 2:45:46 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 2:45:46 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 2:45:46 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 2:45:55 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 2:45:55 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 2:47:47 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 2:47:47 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 2:47:47 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 2:47:47 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 2:47:47 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 2:47:47 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 2:47:48 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 2:47:48 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 2:49:11 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 2:49:12 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 2:49:12 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 2:49:12 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 2:49:12 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 2:49:12 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 2:49:13 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 2:49:13 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 2:51:15 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 2:51:16 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 2:51:16 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 2:51:16 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 2:51:16 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 2:51:16 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 2:51:17 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 2:51:17 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 2:52:27 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 2:52:27 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 2:52:27 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 2:52:27 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 2:52:27 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 2:52:27 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 2:52:28 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 2:52:28 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 09, 2014 2:55:32 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 09, 2014 2:55:32 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 09, 2014 2:55:32 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 09, 2014 2:55:32 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 09, 2014 2:55:32 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 09, 2014 2:55:32 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 09, 2014 2:55:34 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 09, 2014 2:55:34 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 20, 2014 6:27:22 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 20, 2014 6:27:22 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 20, 2014 6:27:22 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 20, 2014 6:27:22 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 20, 2014 6:27:22 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 20, 2014 6:27:22 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 20, 2014 6:27:23 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 20, 2014 6:27:23 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 20, 2014 6:29:41 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 20, 2014 6:29:42 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 20, 2014 6:29:42 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 20, 2014 6:29:42 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 20, 2014 6:29:42 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 20, 2014 6:29:42 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 20, 2014 6:29:43 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 20, 2014 6:29:43 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 30, 2014 4:56:46 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 30, 2014 4:56:46 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 30, 2014 4:56:46 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 30, 2014 4:56:46 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 30, 2014 4:56:46 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 30, 2014 4:56:46 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile
+Jun 30, 2014 4:56:48 PM jsystem.framework.scenario.JTestContainer <init>
+FINE: JTest container : scenarios/default
+Jun 30, 2014 4:56:48 PM jsystem.framework.scenario.ParametersManager retrieveTestParametersToEnvironment
+FINE: running from dev studio, no need to return parameters
+Jun 30, 2014 4:57:52 PM jsystem.framework.sut.SutFactory init
+FINE: Use sut file: default.xml
+Jun 30, 2014 4:57:52 PM jsystem.framework.report.RunnerListenersManager addTestInfo
+WARNING: Fail to load test code because source file is missing. C:\Users\cchakraborty\workspace\CaptureAutomation\tests/main/tests/SampleTest.java
+Jun 30, 2014 4:57:52 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setup
+Jun 30, 2014 4:57:52 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Number of setter param is bigger then 1 for: setupProfile
+Jun 30, 2014 4:57:52 PM jsystem.framework.scenario.RunnerTest loadParameters
+FINE: Unknown parameter type: junit.framework.TestResult for: TestResult
+Jun 30, 2014 4:57:52 PM junit.framework.SystemTestCaseImpl jsystemTestPreExecution
+INFO: Running test: setupProfile

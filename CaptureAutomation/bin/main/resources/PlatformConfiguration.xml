@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<device>iPhone Simulator</device>
+	<takesScreenshot>true</takesScreenshot>
+	<version>4.1.2</version>
+	<newCommandTimeout>10000</newCommandTimeout>
+	<app>/Users/chiranjit/Desktop/Downloads/NativeiOSShell/build/Debug-iphonesimulator/Perceptive Mobile Capture.app</app>
+	<URL>http://localhost:4723/wd/hub</URL>
+</root>
