@@ -3,7 +3,9 @@ package main.tests;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
 import static org.junit.Assert.*;
+import main.lib.ReadFromResources;
 import main.systemobjects.*;
 import main.controls.screens.ConnectionProfileUI;
 
@@ -61,5 +63,11 @@ public class SampleTest //extends SystemTestCase4
 		
 		
 		
+	}
+	
+	@Test
+	public void propTest()
+	{
+		System.out.println(new ReadFromResources().getProperty("navigateToLoginScreen"));
 	}
 }
