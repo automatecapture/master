@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<ConnectionProfile>
+		<noProfile>The application requires a connection profile to log in. Tap \"Create\" to add a connection profile.</noProfile>
+		<invalidURL>The URL you entered is invalid. Enter a valid server URL.</invalidURL>
+	</ConnectionProfile>
+</root>

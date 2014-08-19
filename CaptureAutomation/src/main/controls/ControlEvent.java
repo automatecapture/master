@@ -1,15 +1,15 @@
 package main.controls;
 
-import java.util.HashMap;
+//import java.util.HashMap;
 import java.util.List;
 
 import main.lib.ControlUtility;
 import main.systemobjects.ConfigWebDriver;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+//import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.*;
+//import io.appium.java_client.*;
 
 public class ControlEvent extends ControlUtility{
 	

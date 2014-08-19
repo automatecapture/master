@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<url>
+		<ip>10.195.6.203</ip>
+		<httpPort>8080</httpPort>
+		<httpsPort>8443</httpsPort>
+		<suffix>integrationserver</suffix>
+	</url>
+	<login>
+		<validUser1>test1,test1</validUser1>
+		<validUser2>test2,test2</validUser2>
+		<invaliduser>sampleInvalidUserName,sampleInvalidPassword</invaliduser>
+	</login>
+	<emails>
+		<invalidEmail>abcd</invalidEmail>
+		<invalidEmail>12334</invalidEmail>
+		<invalidEmail>abd.com</invalidEmail>
+		<invalidEmail>abc@bcd@efg</invalidEmail>
+		<validEmail>abc@def.com</validEmail>
+	</emails>
+</root>
