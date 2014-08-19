@@ -49,12 +49,36 @@ public class ControlUtility
 		}
 	}
 	
-	protected void TypeText(WebElement element, String text)
+	protected void ClearTextField(WebElement element)
+	{
+		element.click();
+		Delay(1);
+		String text = element.getText();
+		System.out.println(text.length());
+		for(int i=0; i<text.length()+1; i++)
+		{
+			try
+			{
+				element.sendKeys("\b");
+			}
+			catch (Exception ex)
+			{
+				System.out.println("TypeText: " + ex.toString());
+				Delay(1000);
+			}
+		}
+	}
+	
+	protected void TypeText(WebElement element, String text, boolean shouldClear)
 	{
 		for(int i=0; i<5; i++)
 		{
 			try
 			{
+				if(shouldClear)
+				{
+					ClearTextField(element);
+				}
 				element.click();
 				element.sendKeys(text);
 				return;

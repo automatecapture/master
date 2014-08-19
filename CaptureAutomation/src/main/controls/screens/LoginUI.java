@@ -1,6 +1,7 @@
 package main.controls.screens;
 
 import main.controls.ControlEvent;
+import main.controls.ControlEvent.ElementExists;
 import main.lib.ControlUtility;
 
 public class LoginUI extends ControlUtility {
@@ -17,10 +18,16 @@ public class LoginUI extends ControlUtility {
 		return event.ReadTextField("User name:");
 	}
 	
+	public boolean isUserNameExists()
+	{
+		ControlEvent event = new ControlEvent();
+		return event.TextFieldExists("User name:", ElementExists.Displayed);
+	}
+	
 	public void SetUserName(String username) throws InterruptedException
 	{
 		ControlEvent event = new ControlEvent();
-		event.WriteTextField("User name:", username);
+		event.WriteTextField("User name:", username, false);
 	}
 	
 	public boolean IsPasswordEmpty()
@@ -33,7 +40,7 @@ public class LoginUI extends ControlUtility {
 	public void SetPassword(String password) throws InterruptedException
 	{
 		ControlEvent event = new ControlEvent();
-		event.WriteTextField("Password:", password);
+		event.WriteTextField("Password:", password, false);
 	}
 	
 	public void ClickOnConnectButton() throws InterruptedException

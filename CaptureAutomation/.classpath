@@ -22,6 +22,7 @@
 	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/httpcore-4.2.1.jar"/>
 	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/httpmime-4.2.1.jar"/>
 	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/ini4j-0.5.2.jar"/>
+	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/java-client-1.1.0.jar"/>
 	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/jcommander-1.29.jar"/>
 	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/jetty-websocket-8.1.8.jar"/>
 	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/jna-3.4.0.jar"/>
@@ -34,6 +35,7 @@
 	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/phantomjsdriver-1.0.4.jar"/>
 	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/protobuf-java-2.4.1.jar"/>
 	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/selenium-api-2.41.0.jar"/>
 	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/selenium-java-2.34.0-srcs.jar"/>
 	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/selenium-java-2.34.0.jar"/>
 	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/serializer-2.7.1.jar"/>
@@ -41,7 +43,5 @@
 	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/xalan-2.7.1.jar"/>
 	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/xercesImpl-2.10.0.jar"/>
 	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/xml-apis-1.4.01.jar"/>
-	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/junit/junit.jar"/>
-	<classpathentry kind="lib" path="/Users/chiranjit/Desktop/Work/jars/junit/org.hamcrest.core_1.3.0.v201303031735.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

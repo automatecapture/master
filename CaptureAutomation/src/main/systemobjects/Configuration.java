@@ -1,10 +1,16 @@
 package main.systemobjects;
 
+import io.appium.java_client.AppiumDriver;
+
 import java.net.URL;
+
+
+import java.util.concurrent.TimeUnit;
 
 //import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
+//import org.openqa.selenium.remote.RemoteWebDriver;
+
 
 public class Configuration {
 	//RemoteWebDriver driver;
@@ -41,8 +47,9 @@ public class Configuration {
 			 
 				//ConfigWebDriver.driver = new RemoteWebDriver(new URL(settings.GetURL()), cap);
 			 
-			 ConfigWebDriver.driver = new RemoteWebDriver(new URL(settings.GetURL()), cap);
+			 ConfigWebDriver.driver = new AppiumDriver(new URL(settings.GetURL()), cap);
 			 
+			 ConfigWebDriver.driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 			 
 			 System.out.println("Driver " + ConfigWebDriver.driver.toString());
 				Thread.sleep(1000);

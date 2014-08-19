@@ -1,13 +1,7 @@
 package main.controls.screens;
 
-import java.util.HashMap;
-
-import org.openqa.selenium.JavascriptExecutor;
-
 import main.controls.*;
 import main.controls.ControlEvent.ElementExists;
-import main.lib.ControlUtility;
-import main.systemobjects.ConfigWebDriver;
 
 public class ConnectionProfileUI {
 
@@ -15,6 +9,7 @@ public class ConnectionProfileUI {
 	{
 		// String errorText = "The application requires a connection profile to log in. Tap \"Create\" to add a connection profile.";
 		ControlEvent event=new ControlEvent();
+		event.WaitFor(5);
 		return event.ReadLableText(errorText);
 	}
 	
@@ -33,6 +28,7 @@ public class ConnectionProfileUI {
 	public void TypeServerNameInCreateProfile(String serverName)
 	{
 		ControlEvent event = new ControlEvent();
+		event.WaitFor(2);
 		event.WriteTextField("Profile name:", serverName);
 	}
 	
@@ -45,10 +41,9 @@ public class ConnectionProfileUI {
 	public void TapOnCreateProfileDoneBtn()
 	{
 		ControlEvent event = new ControlEvent();
-		event.WaitFor(3);
-		System.out.println("_____ JS _____");
-		((JavascriptExecutor)ConfigWebDriver.driver).executeScript("mobile: tap", new HashMap<String, Double>() {{ put("tapCount", 1.0); put("touchCount", 1.0); put("duration", 0.5); put("x", 294.0); put("y", 328.0); }});
+		event.WaitFor(1);
 		event.TapLable("Done");
+		event.WaitFor(1);
 	}
 	
 	public void TapOnCreateProfileCancelBtn()
@@ -59,9 +54,16 @@ public class ConnectionProfileUI {
 	
 	public boolean isProfileSetErrorDisplayed(String errorText)
 	{
-		//String errorText = "A profile name and server URL is required.";
 		ControlEvent event=new ControlEvent();
+		event.WaitFor(2);
 		return event.ReadLableText(errorText);
+	}
+	
+	public void TapOnConnectionProfile(String profileName)
+	{
+		ControlEvent event=new ControlEvent();
+		event.TapLable(profileName);
+		event.WaitFor(2);
 	}
 	
 	// Update
@@ -85,11 +87,8 @@ public class ConnectionProfileUI {
 		TapOnCreateProfileCancelBtn();
 	}
 	// EndOFUpDate
+
 	
-	public void TapOnBackButton()
-	{
-		System.out.println(ConfigWebDriver.driver.getPageSource());
-	}
 	
 	/*
 	public int GetCountOfConnProfilesInList()
