@@ -14,11 +14,15 @@ import java.io.IOException;
 
 public class PageSource extends ControlUtility {
 	
-	public void tapElementByAttr(String attr, String attrValue) throws ParserConfigurationException, SAXException, IOException, InterruptedException
+	public void tapElementByAttr(String attr, String attrValue) throws Exception
 	{
 		System.out.println(ConfigWebDriver.driver.getPageSource());
 		List<WebElement> list = ConfigWebDriver.driver.findElements(By.name(""));
 		System.out.println("Elements : " + list.size());
+		if(list.size()==0)
+		{
+			throw new Exception();
+		}
 		for(int i=0; i<list.size(); i++)
 		{
 			WebElement el = list.get(i);
@@ -33,6 +37,7 @@ public class PageSource extends ControlUtility {
 				System.out.println("Else");
 			}
 		}
+		
 		return;
 	}
 	

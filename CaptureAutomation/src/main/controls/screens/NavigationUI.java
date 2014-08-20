@@ -7,7 +7,7 @@ import org.xml.sax.SAXException;
 
 public class NavigationUI {
 
-	public void TapOnBackButton() throws ParserConfigurationException, SAXException, IOException, InterruptedException
+	public void TapOnBackButton() throws Exception
 	{
 		PageSource readPage = new PageSource();
 		readPage.tapElementByAttr("hint", "Up");
