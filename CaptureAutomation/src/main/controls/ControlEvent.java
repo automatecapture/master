@@ -4,6 +4,7 @@ package main.controls;
 import java.util.List;
 
 import main.lib.ControlUtility;
+import main.lib.ElementNotFoundException;
 import main.systemobjects.ConfigWebDriver;
 
 import org.openqa.selenium.By;
@@ -23,12 +24,21 @@ public class ControlEvent extends ControlUtility{
 		Displayed, Enabled, Selected
 	}
 	
-	private List<WebElement> FindMobileElements(String elementName)
+	private void CheckForNoElementException(int elementNumber, String elementInfo) throws ElementNotFoundException
+	{
+		if(elementNumber<1)
+		{
+			throw new ElementNotFoundException(elementInfo);
+		}
+	}
+	
+	private List<WebElement> FindMobileElements(String elementName) throws ElementNotFoundException
 	{
 		List<WebElement> listOfElements = null;
 		for(int i=0; i<5; i++)
 		{
 			listOfElements = ConfigWebDriver.driver.findElements(By.name(elementName));
+			CheckForNoElementException(listOfElements.size(), elementName);
 			if(listOfElements.size()>0)
 			{
 				break;
@@ -37,12 +47,10 @@ public class ControlEvent extends ControlUtility{
 		}
 		return listOfElements;
 	}
-	
-	private boolean ElementExists(String elementName, ElementExists exists, ElementType types)
+
+	private boolean ElementExists(String elementName, ElementExists exists, ElementType types) throws ElementNotFoundException
 	{
 		boolean result = false;
-		try
-		{
 			List<WebElement> listOfElements = FindMobileElements(elementName);
 			for(int i=0; i<listOfElements.size(); i++)
 			{
@@ -60,35 +68,31 @@ public class ControlEvent extends ControlUtility{
 					break;
 				}
 			}
-		}
-		catch(Exception ex)
-		{
-			System.out.println(ex.toString());
-		}
+		
 		return result;
 	}
 	
-	public boolean LableExists(String elementName, ElementExists exists)
+	public boolean LableExists(String elementName, ElementExists exists) throws ElementNotFoundException
 	{
 		return ElementExists(elementName, exists, ElementType.StaticText);
 	}
 	
-	public boolean ButtonExists(String elementName, ElementExists exists)
+	public boolean ButtonExists(String elementName, ElementExists exists) throws ElementNotFoundException
 	{
 		return ElementExists(elementName, exists, ElementType.Button);
 	}
 	
-	public boolean TextFieldExists(String elementName, ElementExists exists)
+	public boolean TextFieldExists(String elementName, ElementExists exists) throws ElementNotFoundException
 	{
 		return ElementExists(elementName, exists, ElementType.TextField);
 	}
 	
-	public String SwitchBtnExists(String xpath)
+	public String SwitchBtnExists(String xpath) throws ElementNotFoundException
 	{
 		String val = "0";
-		try
-		{
+
 			List<WebElement> listOfElements = ConfigWebDriver.driver.findElements(By.xpath(xpath));
+			CheckForNoElementException(listOfElements.size(),xpath);
 			for(int i=0; i<listOfElements.size(); i++)
 			{
 				if( listOfElements.get(i).getTagName().contains(ElementType.Switch.toString()))
@@ -97,19 +101,15 @@ public class ControlEvent extends ControlUtility{
 					break;
 				}
 			}
-		}
-		catch(Exception ex)
-		{
-			System.out.println(ex.toString());
-		}
+
 		return val;
 	}
 	
-	public boolean TapSwitch(String xpath)
+	public boolean TapSwitch(String xpath) throws ElementNotFoundException, InterruptedException
 	{
-		try
-		{
+
 			List<WebElement> listOfElements = ConfigWebDriver.driver.findElements(By.xpath(xpath));
+			CheckForNoElementException(listOfElements.size(),xpath);
 			for(int i=0; i<listOfElements.size(); i++)
 			{
 				if( listOfElements.get(i).getTagName().contains(ElementType.Switch.toString()))
@@ -119,19 +119,12 @@ public class ControlEvent extends ControlUtility{
 				}
 				WaitFor(1);
 			}
-		}
-		catch(Exception ex)
-		{
-			System.out.println(ex.toString());
-			return false;
-		}
+
 		return true;
 	}
 	
-	public boolean TapTableCell(String elementName)
+	public boolean TapTableCell(String elementName) throws ElementNotFoundException, InterruptedException
 	{
-		try
-		{
 			List<WebElement> listOfElements = FindMobileElements(elementName);
 			for(int i=0; i<listOfElements.size(); i++)
 			{
@@ -142,20 +135,12 @@ public class ControlEvent extends ControlUtility{
 				}
 				WaitFor(1);
 			}
-		}
-		catch(Exception ex)
-		{
-			System.out.println(ex.toString());
-			return false;
-		}
 		WaitFor(4);
 		return true;
 	}
 	
-	public boolean TapButton(String elementName)
+	public boolean TapButton(String elementName) throws ElementNotFoundException, InterruptedException
 	{
-		try
-		{
 			List<WebElement> listOfElements = FindMobileElements(elementName);
 			for(int i=0; i<listOfElements.size(); i++)
 			{
@@ -166,20 +151,14 @@ public class ControlEvent extends ControlUtility{
 				}
 				WaitFor(1);
 			}
-		}
-		catch(Exception ex)
-		{
-			System.out.println(ex.toString());
-			return false;
-		}
+
 		WaitFor(4);
 		return true;
 	}
 	
-	public boolean TapLable(String elementName)
+	public boolean TapLable(String elementName) throws ElementNotFoundException, InterruptedException
 	{
-		try
-		{
+
 			WaitFor(2);
 			List<WebElement> listOfElements = FindMobileElements(elementName);
 			System.out.println(listOfElements.size());
@@ -192,19 +171,13 @@ public class ControlEvent extends ControlUtility{
 				}
 				WaitFor(1);
 			}
-		}
-		catch(Exception ex)
-		{
-			System.out.println(ex.toString());
-			return false;
-		}
+
 		return true;
 	}
 	
-	public boolean TapRightContext(String name)
+	public boolean TapRightContext(String name) throws ElementNotFoundException, InterruptedException
 	{
-		try
-		{
+
 			List<WebElement> listOfElements = FindMobileElements(name);
 			for(int i=0; i<listOfElements.size(); i++)
 			{
@@ -215,19 +188,13 @@ public class ControlEvent extends ControlUtility{
 				}
 				WaitFor(1);
 			}
-		}
-		catch(Exception ex)
-		{
-			System.out.println(ex.toString());
-			return false;
-		}
+
 		return true;
 	}
 	
-	public boolean ReadLableText(String elementName)
+	public boolean ReadLableText(String elementName) throws ElementNotFoundException, InterruptedException
 	{
-		try
-		{
+
 			System.out.println(elementName);
 			List<WebElement> listOfElements = FindMobileElements(elementName);
 			System.out.println(listOfElements.size());
@@ -239,19 +206,14 @@ public class ControlEvent extends ControlUtility{
 				}
 				WaitFor(1);
 			}
-		}
-		catch(Exception ex)
-		{
-			System.out.println(ex.toString());
-		}
+
 		return false;
 	}
 	
-	public String ReadTextField(String elementName)
+	public String ReadTextField(String elementName) throws ElementNotFoundException
 	{
 		String text = null;
-		try
-		{
+
 			List<WebElement> listOfElements = FindMobileElements(elementName);
 			for(int i=0; i<listOfElements.size(); i++)
 			{
@@ -261,18 +223,13 @@ public class ControlEvent extends ControlUtility{
 					break;
 				}
 			}
-		}
-		catch(Exception ex)
-		{
-			System.out.println(ex.toString());
-		}
+
 		return text;
 	}
 	
-	public boolean WriteTextField(String elementName, String text, boolean shouldClear)
+	public boolean WriteTextField(String elementName, String text, boolean shouldClear) throws ElementNotFoundException, InterruptedException
 	{
-		try
-		{
+
 			System.out.println(ElementType.TextField.toString());
 			List<WebElement> listOfElements = null ;
 			int listSize = 0;
@@ -286,6 +243,8 @@ public class ControlEvent extends ControlUtility{
 				WaitFor(1);
 			}
 			
+			CheckForNoElementException(listSize, elementName);
+			
 			for(int i=0; i<listSize; i++)
 			{
 				WebElement el = listOfElements.get(i);
@@ -296,20 +255,16 @@ public class ControlEvent extends ControlUtility{
 					return true;
 				}
 			}
-		}
-		catch(Exception ex)
-		{
-			System.out.println(ex.toString());
-		}
+
 		return false;
 	}
 	
-	public boolean WriteTextField(String elementName, String text)
+	public boolean WriteTextField(String elementName, String text) throws ElementNotFoundException, InterruptedException
 	{
 		return WriteTextField(elementName, text, true);
 	}
 	
-	public void TapOnDoneKey()
+	public void TapOnDoneKey() throws ElementNotFoundException, InterruptedException
 	{
 		System.out.println("TapOnDoneKey");
 

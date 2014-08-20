@@ -8,6 +8,7 @@ import org.xml.sax.SAXException;
 
 import main.controls.ControlEvent;
 import main.lib.ControlUtility;
+import main.lib.ElementNotFoundException;
 import main.lib.PageSource;
 
 public class UserMenuUI extends ControlUtility {
@@ -24,7 +25,7 @@ public class UserMenuUI extends ControlUtility {
 		return true;
 	}
 	
-	public void TapOnUserMenu()
+	public void TapOnUserMenu() throws ElementNotFoundException, InterruptedException
 	{
 		ControlEvent event = new ControlEvent();
 		event.TapRightContext("User Menu");

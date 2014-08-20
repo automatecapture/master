@@ -1,16 +1,11 @@
 package main.lib;
 
-import javax.xml.parsers.ParserConfigurationException;
-
 import java.util.List;
 
 import main.systemobjects.ConfigWebDriver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.xml.sax.SAXException;
-
-import java.io.IOException;
 
 public class PageSource extends ControlUtility {
 	

@@ -2,6 +2,7 @@ package main.controls.screens;
 
 import main.controls.ControlEvent;
 import main.lib.ControlUtility;
+import main.lib.ElementNotFoundException;
 
 public class ContextMenuUI extends ControlUtility {
 	
@@ -10,19 +11,27 @@ public class ContextMenuUI extends ControlUtility {
 		OfflineLogin, ConnProfile, LogSettings
 	}
 	
-	public boolean isNavBarTitle(String expectedTitle)
+	public boolean isNavBarTitle(String expectedTitle) throws ElementNotFoundException, InterruptedException
 	{
 		ControlEvent event = new ControlEvent();
-		return event.ReadLableText(expectedTitle);
+		try
+		{
+			return event.ReadLableText(expectedTitle);
+		}
+		catch(ElementNotFoundException ex)
+		{
+			System.out.println(ex);
+			return false;
+		}
 	}
 	
-	public void TapOnRightContextMenu()
+	public void TapOnRightContextMenu() throws ElementNotFoundException, InterruptedException
 	{
 		ControlEvent event = new ControlEvent();
 		event.TapRightContext("User Menu");
 	}
 	
-	public void TapOptionFromRightContextMenu(ModuleToSelect module)
+	public void TapOptionFromRightContextMenu(ModuleToSelect module) throws ElementNotFoundException, InterruptedException
 	{
 		ControlEvent event = new ControlEvent();
 		switch(module)

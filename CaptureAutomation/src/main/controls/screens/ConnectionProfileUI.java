@@ -2,43 +2,60 @@ package main.controls.screens;
 
 import main.controls.*;
 import main.controls.ControlEvent.ElementExists;
+import main.lib.ElementNotFoundException;
 
 public class ConnectionProfileUI {
 
-	public boolean isNoConnProfileErrorDisplayed(String errorText)
+	public boolean isNoConnProfileErrorDisplayed(String errorText) throws InterruptedException
 	{
-		// String errorText = "The application requires a connection profile to log in. Tap \"Create\" to add a connection profile.";
+		
 		ControlEvent event=new ControlEvent();
 		event.WaitFor(5);
-		return event.ReadLableText(errorText);
+		try
+		{
+			return event.ReadLableText(errorText);
+		}
+		catch(ElementNotFoundException ex)
+		{
+			System.out.println(ex);
+			return false;
+		}
 	}
 	
-	public boolean DoesCreateButtonExists()
+	public boolean DoesCreateButtonExists() throws ElementNotFoundException
 	{
 		ControlEvent event = new ControlEvent();
-		return event.ButtonExists("Create", ElementExists.Displayed);
+		try
+		{
+			return event.ButtonExists("Create", ElementExists.Displayed);
+		}
+		catch(ElementNotFoundException ex)
+		{
+			System.out.println(ex);
+			return false;
+		}
 	}
 	
-	public void TapOnCreateButton()
+	public void TapOnCreateButton() throws ElementNotFoundException, InterruptedException
 	{
 		ControlEvent event = new ControlEvent();
 		event.TapLable("Create");
 	}
 
-	public void TypeServerNameInCreateProfile(String serverName)
+	public void TypeServerNameInCreateProfile(String serverName) throws ElementNotFoundException, InterruptedException
 	{
 		ControlEvent event = new ControlEvent();
 		event.WaitFor(2);
 		event.WriteTextField("Profile name:", serverName);
 	}
 	
-	public void TypeURLInCreateProfile(String serverURL)
+	public void TypeURLInCreateProfile(String serverURL) throws ElementNotFoundException, InterruptedException
 	{
 		ControlEvent event = new ControlEvent();
 		event.WriteTextField("Server URL:", serverURL);
 	}
 	
-	public void TapOnCreateProfileDoneBtn()
+	public void TapOnCreateProfileDoneBtn() throws ElementNotFoundException, InterruptedException
 	{
 		ControlEvent event = new ControlEvent();
 		event.WaitFor(1);
@@ -46,20 +63,20 @@ public class ConnectionProfileUI {
 		event.WaitFor(1);
 	}
 	
-	public void TapOnCreateProfileCancelBtn()
+	public void TapOnCreateProfileCancelBtn() throws ElementNotFoundException, InterruptedException
 	{
 		ControlEvent event = new ControlEvent();
 		event.TapLable("Cancel");
 	}
 	
-	public boolean isProfileSetErrorDisplayed(String errorText)
+	public boolean isProfileSetErrorDisplayed(String errorText) throws ElementNotFoundException, InterruptedException
 	{
 		ControlEvent event=new ControlEvent();
 		event.WaitFor(2);
 		return event.ReadLableText(errorText);
 	}
 	
-	public void TapOnConnectionProfile(String profileName)
+	public void TapOnConnectionProfile(String profileName) throws ElementNotFoundException, InterruptedException
 	{
 		ControlEvent event=new ControlEvent();
 		event.TapLable(profileName);
@@ -67,22 +84,22 @@ public class ConnectionProfileUI {
 	}
 	
 	// Update
-	public void TypeServerNameInUpdateProfile(String serverName)
+	public void TypeServerNameInUpdateProfile(String serverName) throws ElementNotFoundException, InterruptedException
 	{
 		TypeServerNameInCreateProfile(serverName);
 	}
 	
-	public void TypeURLInUpdateProfile(String serverURL)
+	public void TypeURLInUpdateProfile(String serverURL) throws ElementNotFoundException, InterruptedException
 	{
 		TypeURLInCreateProfile(serverURL);
 	}
 	
-	public void TapOnUpdateProfileDoneBtn()
+	public void TapOnUpdateProfileDoneBtn() throws ElementNotFoundException, InterruptedException
 	{
 		TapOnCreateProfileDoneBtn();
 	}
 	
-	public void TapOnUpdateProfileCancelBtn()
+	public void TapOnUpdateProfileCancelBtn() throws ElementNotFoundException, InterruptedException
 	{
 		TapOnCreateProfileCancelBtn();
 	}
