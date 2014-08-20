@@ -3,5 +3,19 @@
 	<ConnectionProfile>
 		<noProfile>The application requires a connection profile to log in. Tap \"Create\" to add a connection profile.</noProfile>
 		<invalidURL>The URL you entered is invalid. Enter a valid server URL.</invalidURL>
+		<emptyProfile>A profile name and server URL is required.</emptyProfile>
+		<emptyUrl>A server URL is required.</emptyUrl>
+		<emptyName>A profile name is required.</emptyName>
 	</ConnectionProfile>
+	<Login>
+		<emptyUserNameText>User name</emptyUserNameText>
+		<emptyName>A username is required.</emptyName>
+		<emptyPass>A password is required.</emptyPass>
+		<securityWarning>Security Warning!</securityWarning>
+		<securityWarningMsg>The server certificate is not from a trusted authority. Do you want to continue?</securityWarningMsg>
+	</Login>
+	<LogSettings>
+		<invalidEmailError>The email address is invalid. Enter a valid email address.</invalidEmailError>
+		<noLogError>No log files available. Enable logging to create application log files.</noLogError>
+	</LogSettings>
 </root>

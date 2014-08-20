@@ -16,6 +16,8 @@ public class ReadFromResources {
 	
 	private String platformConfigFile = "src/main/resources/PlatformConfiguration.xml";
 	private String globalResourcesFile = "src/main/resources/GlobalResources.xml";
+	private String stringResourcesFile = "src/main/resources/StringResources.xml";
+	private String testDataFile = "src/main/resources/testData.xml";
 	
 	  public String getProperty( String propName)
 	  {
@@ -75,12 +77,13 @@ public class ReadFromResources {
         return nodeText;
 	}
 	
-    public String GetNodeValue(String screenName, String nodeName)
+	public String GetNodeValue(String screenName, String nodeName, String filePath)
     {
+		
         String nodeText=new String();
         try
         {
-            File fXmlFile = new File(globalResourcesFile);
+            File fXmlFile = new File(filePath);
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(fXmlFile);
@@ -97,4 +100,29 @@ public class ReadFromResources {
         System.out.println("Node Text :GetNodeValue : " + nodeText);
         return nodeText;
     }
+	
+    public String GetNodeValue(String screenName, String nodeName)
+    {
+    	return GetNodeValue(screenName, nodeName, globalResourcesFile);
+    }
+    
+    public String getString(String screenName, String nodeName)
+    {
+    	return GetNodeValue(screenName, nodeName, stringResourcesFile);
+    }
+    
+    public String getTestData(String screenName, String nodeName)
+    {
+    	return GetNodeValue(screenName, nodeName, testDataFile);
+    }
+    
+    public String getDefaultConnectionURL(boolean isUnsecure)
+    {
+    	String prefix = (isUnsecure==true) ? "http" : "https";
+    	String protocal = getTestData("url", "ip");
+    	String port = (isUnsecure==true) ? getTestData("url","httpPort") : getTestData("url","httpsPort");
+    	String suffix = getTestData("url","suffix");
+    	return String.format("{0}://{1}:{2}/{3}", prefix, protocal, port, suffix);
+    }
+    
 }

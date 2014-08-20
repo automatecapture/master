@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
+import main.lib.ReadFromResources;
 import main.systemobjects.*;
 import main.controls.ControlEvent;
 import main.controls.screens.ConnectionProfileUI;
@@ -20,10 +21,12 @@ import main.controls.screens.UserMenuUI;
 public class SampleTest //extends SystemTestCase4
 {
 	private Configuration config;
+	private ReadFromResources readResource;
 	
 	public SampleTest()
 	{
 		config = new Configuration();
+		readResource = new ReadFromResources();
 	}
 	
 	@Before
@@ -41,12 +44,13 @@ public class SampleTest //extends SystemTestCase4
 	@Test
 	public void setupProfileTest() throws Exception
 	{
-		String errorText = "The application requires a connection profile to log in. Tap \"Create\" to add a connection profile.";
+		String errorText = readResource.getString("ConnectionProfile", "noProfile");
+		
 		ConnectionProfileUI connProfile = new ConnectionProfileUI();
 		assertEquals("Error screen not proper", true, connProfile.isNoConnProfileErrorDisplayed(errorText));
 		connProfile.TapOnCreateButton();
 		connProfile.TypeServerNameInCreateProfile("temp");
-		connProfile.TypeURLInCreateProfile("http://10.195.6.203:8080/integrationserver");
+		connProfile.TypeURLInCreateProfile(readResource.getDefaultConnectionURL(true));
 		connProfile.TapOnCreateProfileDoneBtn();
 		assertEquals("Error screen not proper", false, connProfile.isNoConnProfileErrorDisplayed(errorText));
 	}
@@ -54,20 +58,21 @@ public class SampleTest //extends SystemTestCase4
 	@Test
 	public void blankProfileCreateTest() throws Exception
 	{
-		String errorText = "The application requires a connection profile to log in. Tap \"Create\" to add a connection profile.";
+		String errorText = readResource.getString("ConnectionProfile", "noProfile");
+		String errProfile = readResource.getString("ConnectionProfile", "emptyProfile");
+		
 		ConnectionProfileUI connProfile = new ConnectionProfileUI();
 		assertEquals("Error screen not proper", true, connProfile.isNoConnProfileErrorDisplayed(errorText));
 		connProfile.TapOnCreateButton();
 		connProfile.TapOnCreateProfileDoneBtn();
-		
-		String errProfile = "A profile name and server URL is required.";
 		assertEquals("Inavlid string", true, connProfile.isProfileSetErrorDisplayed(errProfile));
 	}
 	
 	@Test
 	public void emptyURLProfileCreateTest() throws Exception
 	{
-		String errorText = "The application requires a connection profile to log in. Tap \"Create\" to add a connection profile.";
+		String errorText = readResource.getString("ConnectionProfile", "noProfile");
+		
 		ConnectionProfileUI connProfile = new ConnectionProfileUI();
 		assertEquals("Error screen not proper", true, connProfile.isNoConnProfileErrorDisplayed(errorText));
 		connProfile.TapOnCreateButton();
@@ -405,14 +410,6 @@ public class SampleTest //extends SystemTestCase4
 	@Test
 	public void invalidEmailTest() throws Exception
 	{
-		/*
-		NavigationUI navbar = new NavigationUI();
-		navbar.TapOnBackButton();
-		
-		ControlEvent event = new ControlEvent();
-		event.TapOnDoneKey();
-		*/
-
 		ContextMenuUI menu= new ContextMenuUI();
 		menu.TapOnRightContextMenu();
 		menu.TapOptionFromRightContextMenu(ModuleToSelect.LogSettings);
